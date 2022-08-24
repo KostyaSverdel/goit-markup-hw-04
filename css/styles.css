@@ -19,9 +19,7 @@ h2,
 h3,
 h4,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+ 
 }
 ul,
 ol {
@@ -77,10 +75,7 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 .footer-logo {
-    margin-left: 215px;
-    margin-right: auto;
-    padding-bottom: 60px;
-      padding-top: 60px;}
+}
     .logo-w-footer { 
     color: var(--bacground-color);
     font-weight: 700;
@@ -127,13 +122,23 @@ column-gap: 52px;
 display: flex;
 align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid #ececec;
     }
     .board {
         /* width: 1600px;
         height: 600px; */
         padding-top: 200px;
         padding-bottom: 200px;
+        margin-left: auto;
+        margin-right: auto;
         background-color: var(--board-bacground-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        background-image: url(/images/svg-and-backgound/bordimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 1600px;
+        height: 600px;
     }
 .about-team-back {
         width: 270px;
@@ -142,8 +147,8 @@ align-items: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
      0px 1px 1px rgba(0, 0, 0, 0.14);
       0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-}
+        box-shadow: 0px 0px 4px 4px;
+} 
 .board-knopka {
     width: 700px;
 }
@@ -176,7 +181,7 @@ font-weight: 700;
             color: var(--logo-plus-color);
             background: var(--hovers-and-logo-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    border: none;
 
             /* identical to box height, or 188% */
 }
@@ -191,8 +196,6 @@ background: var(--bacground-color-knopka);
 }
 .portfolio-pic-back {
         width: 370px;
-        height: 404px;
-    
         background: var(--bacground-color);
         border: 1px solid var(--border-portfolio-pic);
 }
@@ -237,16 +240,18 @@ margin-bottom: 10px;
 .what-img {
         display: flex;
     column-gap: 30px;
-    align-items: center;}
+    align-items: center;
+padding-bottom: 94px;
+}
 
 .list-images-work {
         font-size: 36px;
         line-height: 1.1;
         letter-spacing: 0.03em;
         color: var(--titel-link-color);
-        padding-bottom: 50px;
-              padding-left: 400px;
-        padding-right: 400px;
+        margin-bottom: 50px;
+              margin-left: 400px;
+        margin-right: 400px;
 }
 .our-advantages {
     padding-top: 94px;
@@ -297,10 +302,11 @@ padding: 30px;
             /* width: 1600px;
         height: 600px; */
         background-color: var(--board-bacground-color);
+            padding-bottom: 60px;
+      padding-top: 60px
 }
 .adress{
     display: block;
-  margin-top: 20px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -310,7 +316,13 @@ padding: 30px;
         letter-spacing: 0.03em;
         text-decoration: none;
 }
+address {
+ margin-top: 20px;
+}
 ul {list-style: none;
+}
+.adre-s:not(:last-child){
+    margin-bottom: 9px;
 }
 .button-portfolio:not(:last-child) {
     margin-right: 8px;
@@ -325,7 +337,6 @@ ul {list-style: none;
         text-align: center;
         letter-spacing: 0.03em;
     cursor: pointer;
-        width: 130px;
         height: 38px;
         border-radius: 4px;
     background-color: var(--botton-colors-portfolio);
@@ -337,6 +348,7 @@ ul {list-style: none;
 .button-portfolio:focus {
     background-color: var(--hovers-and-logo-color);
         color: var(--address-bord-color);
+        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 .buttons-portfolio-page {
     padding-top: 94px;
@@ -346,7 +358,7 @@ ul {list-style: none;
     display: flex;
     align-items: center;
 justify-content: center;
-padding-bottom: 56px;
+margin-bottom: 56px;    
 }
 .pic-port {
      display: flex;
