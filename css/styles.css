@@ -268,8 +268,8 @@ text-align: center;
         width: 270px;
         height: 368px;
     background: var(--bacground-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
-     0px 1px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
@@ -348,6 +348,13 @@ ul {list-style: none;
     background-color: var(--hovers-and-logo-color);
         color: var(--address-bord-color);
         box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.portfolink {
+    text-decoration: none;
+}
+.portfolink:hover,
+.portfolink:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .buttons-portfolio-page {
     padding-top: 94px;
