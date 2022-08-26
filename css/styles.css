@@ -113,11 +113,23 @@ column-gap: 52px;
         letter-spacing: 0.03em;
         color: var(--contacts-link-color);
         text-decoration: none;    
+        display: flex;
     }
     .navig-adres:hover,
     .navig-adres:focus {
         color: var(--hovers-and-logo-color)
     }
+    .conta-ic {
+margin-right: 10px;
+margin-top: auto;
+margin-bottom: auto;
+justify-items: center;
+}
+.conta-ic:hover,
+.conta-ic:focus {
+    color: var(--hovers-and-logo-color);
+}
+
 .header-conteiner {
 display: flex;
 align-items: center;
@@ -132,7 +144,7 @@ align-items: center;
         margin-left: auto;
         margin-right: auto;
         background-color: var(--board-bacground-color);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/svg-and-backgound/bordimg.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bordimg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -350,6 +362,7 @@ ul {list-style: none;
         box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 .portfolink {
+    display: block;
     text-decoration: none;
 }
 .portfolink:hover,
