@@ -185,7 +185,9 @@ body {
 .social-footer {
   display: flex;
   align-items: baseline;
-  flex-direction: column;
+}
+.footer-soccial {
+  margin-right: 70px;
 }
 .social-footer-icon {
   width: 20px;
