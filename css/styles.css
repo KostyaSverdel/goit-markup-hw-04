@@ -20,6 +20,7 @@ h2,
 h3,
 h4,
 p {
+  margin: 0px;
 }
 ul,
 ol {
@@ -46,6 +47,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--titel-link-color);
+}
+header {
+  border-bottom: 1px solid #ececec;
 }
 .conteiner {
   width: 1200px;
@@ -137,7 +141,6 @@ body {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: var(--social-icon-color);
 }
 .social-list-link {
   width: 44px;
@@ -147,6 +150,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--social-icon-color);
 }
 .tx-footer {
   margin-bottom: 20px;
@@ -207,7 +211,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 .board {
   /* width: 1600px;
@@ -261,7 +264,7 @@ body {
   color: var(--logo-plus-color);
   background: var(--hovers-and-logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
+  border-radius: 4px;
 
   /* identical to box height, or 188% */
 }
@@ -271,7 +274,6 @@ body {
   color: var(--address-bord-color);
   background: var(--bacground-color-knopka);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .portfolio-pic-back {
   width: 370px;
@@ -315,7 +317,6 @@ body {
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
   fill: var(--social-icon-color);
-  margin-bottom: 94px;
 }
 .us-clients {
   display: flex;
@@ -330,10 +331,13 @@ body {
 .clients-work {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-top: 0%;
   margin-left: auto;
   margin-right: auto;
+}
+.klient {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list {
   margin-bottom: 10px;
@@ -341,7 +345,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-top: 30px;
   color: var(--titel-link-color);
 }
 .list-description {
@@ -468,7 +472,8 @@ ul {
 .button-portfolio:focus {
   background-color: var(--hovers-and-logo-color);
   color: var(--address-bord-color);
-  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolink {
   display: block;
